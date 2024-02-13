@@ -8,5 +8,14 @@ jobs:
         run: echo "gagan"
       - name: my-second-job
         run: |
-            echo: "123"
-            echo: "456"    
+            echo "123"
+            echo "456"    
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-second-step
+        run: echo "megha"
+      - name: my-second-job
+        run: |
+            echo "098"
+            echo "654"            
